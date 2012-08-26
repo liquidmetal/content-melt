@@ -1,0 +1,581 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-family: Arial;
+}
+
+body { 
+    background-color: #ededed;
+    background-image: url('/img/bg-body.gif');
+}
+
+a {
+    color:#b53000;
+    text-decoration:underline;
+}
+
+a:hover, a:active {
+    color:#b43000;
+    text-decoration:none;
+}
+
+a:link {
+    color:#a42000;
+}
+
+a:visited {
+    color:#b53000;
+}
+
+#header {
+    background: url('/img/bg-header.png');
+    height:89px;
+}
+
+#header #branding {
+    margin: 0 auto;    
+    width: 960px;
+    height: 54px;
+}
+
+#header #secondary {
+    margin: 0 auto;
+    width: 960px;
+    height: 35px;
+}
+
+#header #branding #logo {
+    height: 54px;
+    background: url('/img/bg-logo.png') no-repeat 0 4px;
+    float: left;
+    width: 140px;
+}
+
+#header #branding #topnav {
+    float: right;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#header #branding #topnav #searchform {
+    margin-top: -3px;
+    overflow: visible;
+}
+
+#header #branding #topnav li {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+
+#header #branding #topnav li > a {
+    color: #9FA8A9;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 14px;
+    text-shadow: #333 0 1px 0;
+    border-radius: 12px;
+    -moz-text-shadow: #333 0 1px 0;
+    -moz-border-radius: 12px;
+}
+
+#header #branding #topnav li > a:hover,
+#header #branding #topnav li > a.current:hover {
+    background: rgba(255,255,255,0.1);
+    color:#fff;
+}
+
+#header #branding #topnav li > a.current {
+    color: #fff;
+}
+
+#header #branding #topnav #searchform input#s {
+    border-radius: 12px;
+    border-style: none;
+    padding: 6px 12px;
+    font-size: 10px;
+    height: 12px;
+    line-height: 100%;
+    background: #DCE3E1 no-repeat url(/img/bg-search.png); /* TODO: Update the bg image*/
+    background-position: 175px 3px;
+    width: 160px;
+    padding-right: 25px;
+    color: #383E3E;
+}
+
+#header #branding #topnav #searchform input#s:focus {
+    background-color: #fff;
+    color:#30403b;
+}
+
+#header #branding #topnav #searchform #searchsubmit {
+    display: none;
+}
+
+#header #secondary #crumbs {
+    float: left;
+    height: 28px;
+    width: 600px;
+    padding-top: 5px;
+    padding-left: 50px;
+    font-size: 10px;
+}
+
+#header #secondary #user {
+    float: right;
+    height: 28px;
+    width: 100px;
+    padding-top: 7px;
+    padding-right: 50px;
+}
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#content #main {
+    background-color: #fff;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-radius: 3px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    border-color: #ccc;
+    padding: 10px;
+    width: 620px;
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+#content #sidebar {
+    width:280px;
+    padding-top: 0px;
+    padding-left: 0px;
+    border-style: none;
+    margin-top: 0px;
+    overflow: visible;
+    float: right;
+}
+
+#content #clearer {
+    clear: both;
+}
+
+#content #main #container img.post-image {
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.post {
+    line-height: 150%;
+    font-size:12px;
+}
+
+.post h1,h2,h3,h4,h5,h6 {
+    color: #B53000;
+}
+
+.post-divider {
+    width: 100%;
+    height: 6px;
+    background: url(/img/divider.png) repeat-x;
+    margin-bottom: 22px;
+}
+
+.post-divider .uplink {
+    text-indent: -9999px;
+    float: right;
+    cursor: pointer;
+    height: 9px;
+    background: url('/img/backtotop.png') no-repeat;
+    width: 80px;
+}
+
+.post ul, .post ol {
+    margin: 0 0 19px 2.5em;
+}
+
+#login {
+    margin-top:20px;
+    width: 250px;
+}
+
+#login .login-email,
+#login .login-password {
+    width: 250px;
+    display: block;
+    height: 20px;
+    margin-bottom:10px;
+}
+
+#login .login-email label,
+#login .login-password label {
+    width: 50px;
+    text-align: right;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom:5px;
+}
+
+#login input {
+    width: 130px;
+    display: block;
+}
+
+#login .submit input {
+    width: 50px;
+    margin-right:50px;
+    float:right;
+    display:block;
+}
+
+#footer {
+    background: url(/img/bg-footer.jpg) repeat-x 0px 25px;
+    border-style: none;
+}
+
+#footer #subsidiary {
+    height: 292px;
+    padding: 33px 0 0 0;
+    margin: 0 auto;
+    width: 960px;
+}
+
+#footer #siteinfo {
+    padding: 0px;
+    padding-bottom: 25px;
+    color: #666;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 0 auto;
+    width: 960px;
+}
+
+#subsidiary #first,
+#subsidiary #second,
+#subsidiary #third {
+    width: 300px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+#subsidiary h3 {
+    margin-bottom: 20px;
+}
+
+#footer #third img {
+    float: left;
+    margin-right: 10px;
+}
+
+#content .category-list {
+    width: 620px;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 75px;
+}
+
+#content .category-list li {
+    float: left;
+    width: 153px;
+    padding-right: 20px;
+    background: url(/img/bg-folder.png) no-repeat 0px 0px;
+    height: 18px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    margin-right: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #EEE;
+}
+
+#content .category-list li a {
+    height: 12px;
+    display: block;
+    margin-top: -3px;
+    padding: 1px;
+    padding-left: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#content .category-list li:hover {
+    background-position: 0px -18px;
+}
+
+#main #tutorial-list {
+    width: 620px;
+}
+
+#main #tutorial-list .tut-listing {
+    width: 600px;
+    height: 110px;
+    margin:0px;
+    padding-bottom: 10px;
+    display: block;
+    padding:0px;
+    border-top: solid 1px #fff;
+    border-bottom: dotted 1px #ccc;
+    -webkit-box-shadow:inset -1px 0 0 rgba(255,255,255,0.2);
+       -moz-box-shadow:inset -1px 0 0 rgba(255,255,255,0.2);
+            box-shadow:inset -1px 0 0 rgba(255,255,255,0.2);
+
+}
+
+#main #tutorial-list .tut-listing h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top:5px;
+    line-height:100%;
+}
+
+#main #tutorial-list .tut-listing img {
+    float: left;
+    display: block;
+    padding: 5px;
+    padding-right: 10px;
+}
+
+#main #tutorial-list .tut-listing .cat-icon {
+    position: absolute;
+    margin-left: 175px;
+    margin-top: 10px;
+}
+
+#main #tutorial-list .tut-listing .cat-icon img {
+    border-style: solid;
+    border-width: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main #tutorial-list .tut-listing .tut.desc {
+    font-size: 12px;
+}
+
+#main #tutorial-list .tut-listing .links {
+    float: right;
+    display: block;
+    overflow: visible;
+}
+
+#main a.redbutton {
+    overflow: visible; /* removes extra side spacing in IE */
+    margin:0;
+    letter-spacing:.1em;
+    white-space: nowrap;
+    position:relative;
+    font-weight: bold;
+    text-align:center;
+    color: #fff;
+    text-shadow: 0 -1px 0 #542000;
+    background: #a42000;
+    background: -moz-linear-gradient(top,  #c42000 0%, #a42000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c42000), color-stop(100%,#a42000));
+    background: -webkit-linear-gradient(top,  #c42000 0%,#a42000 100%);
+    background: -o-linear-gradient(top,  #c42000 0%,#a42000 100%);
+    background: -ms-linear-gradient(top,  #c42000 0%,#a42000 100%);
+    background: linear-gradient(top,  #c42000 0%,#a42000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c42000', endColorstr='#a42000',GradientType=0 );
+    border-top:none;
+    border-bottom: none;
+    border-left:solid 1px #a42000;
+    border-right:solid 1px #a42000;
+    display: inline-block;
+    overflow: visible; /* removes extra side spacing in IE */
+    -webkit-box-shadow: 0 1px 2px #000, inset 0 1px 0px #cce3fc;
+       -moz-box-shadow: 0 1px 2px #000, inset 0 1px 0px #cce3fc;
+            box-shadow: 0 1px 2px #000, inset 0 1px 0px #cce3fc;
+    padding:4px 13px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+#main .question-summary {
+    border-bottom: 1px dotted #999;
+    overflow: hidden;
+    padding: 11px 0px;
+    width: 100%;
+    float: left;
+}
+
+#main .question-summary .stats-container {
+    width: 86px;
+    float: left;
+    margin-right: 8px;
+}
+
+#main .question-summary .stats-container .stats {
+    background: #eee;
+    margin: 0 0 0 7px;
+    padding: 4px 7px 6px 7px;
+    width: 58px;
+    color: #555;
+    text-align: center;
+}
+
+#main .question-summary .stats-container .stats .vote .vote-count {
+    font-size: 240%;
+    font-weight: bold;
+    color:#808185;
+    display: block;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 5px;
+}
+
+.vote .votes {
+    text-align: center;
+}
+
+#main .question-summary .stats-container .stats .answer .answer-count {
+    font-size: 140%;
+    font-weight: bold;
+    color: #808185;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    line-height:100%;
+}
+
+.answer .answers {
+    text-align: center;
+}
+
+.stats-container .views {
+    text-align: center;
+    color: #999;
+    margin-top: 2px;
+}
+
+#main .stats-container .summary {
+    width:525px;
+    float:right;
+}
+
+#main .question-summary .tags {
+    float: left;
+}
+
+#main .question-summary .who {
+    float: right;
+}
+
+.user-details {
+    display: block;
+    width: 155px;
+    height: 35px;
+    float: right;
+}
+
+.user-details .gravatar {
+    float: left;
+}
+
+.user-details .user {
+    margin-left: 5px;
+    float: left;
+    width: 100px;
+    line-height: 100%;
+}
+
+.user-details .stats {
+    margin-left: 5px;
+    float: left;
+    width: 100px;
+    font-size: 120%;
+    color:#444;
+}
+
+.question-summary .summary h3 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.question-summary .summary a:link {
+    text-decoration: none;
+}
+
+.question-summary .summary a:hover {
+    text-decoration: underline;
+}
+
+.question-summary .question {
+    margin-bottom: 10px;
+}
+
+a.tag:link {
+    float: left;
+    margin-right: 10px;
+    background-color:#ddd;
+    color: #444;
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    text-decoration: none;
+    padding: 3px 4px 3px 4px;
+    margin: 2px 2px 2px 0;
+    font-size: 90%;
+}
+
+a.tag:hover {
+    background-color: #eee;
+}
+
+.question .content {
+    margin-bottom: 10px;
+}
+
+.question .controls {
+    float: left;
+    color: #555;
+}
+
+.question .post-tags {
+    margin-bottom: 10px;
+    clear: both;
+    height: 24px;
+}
+
+.question .vote {
+    width: 40px;
+    float: left;
+}
+
+.question .question-content {
+    width: 570px;
+    float: right;
+    border-bottom: 1px dotted #999;
+}
+
+.question .comments {
+    clear: both;
+}
+
+.question .comments .comment {
+    width: 550px;
+    float: right;
+    border-bottom: 1px dotted #ccc;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.question .comments .comment:hover {
+    background-color:#f5f5f5;
+}
+
+.question h1 {
+    font-size: 24px;
+}
+
+.catlist .summary {
+    width:45%;
+}
