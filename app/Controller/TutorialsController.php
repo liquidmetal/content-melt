@@ -67,6 +67,7 @@ class TutorialsController extends AppController {
         if($this->request->is('get')) {
             $this->request->data = $this->Tutorial->read();
             $this->set('categories', $this->Category->find('list'));
+            $this->set('current_tutorial', $this->Tutorial->read());
         } else {
             if($this->Tutorial->save($this->request->data)) {
                 $this->Session->setFlash('Tutorial updated');

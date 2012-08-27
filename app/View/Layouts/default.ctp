@@ -26,6 +26,10 @@ $cakeDescription = __d('cake_dev', 'Blah CakePHP: the rapid development php fram
 
         echo $this->Html->css('baseline.compress');
         echo $this->Html->css('style');
+        echo $this->Html->css('font-awesome');
+        echo $this->Html->css('jquery-ui-1.8.23.custom');
+        echo $this->Html->script('jquery-1.8.0.min');
+        echo $this->Html->script('jquery-ui-1.8.23.custom.min');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

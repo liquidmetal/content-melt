@@ -1,5 +1,5 @@
 <h1>Admin page for creating a new tutorial</h1>
-
+<script src="/js/hallo.js"></script>
 <?php echo $this->Form->create("Tutorial");
 echo $this->Form->input("title");
 echo $this->Tinymce->input("Tutorial.content", array('label'=>'Content'), array('language'=>'en', 'height'=>360, 'relative_urls'=>false));
